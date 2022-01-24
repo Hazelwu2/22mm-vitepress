@@ -1,0 +1,14 @@
+name: Github Action Practice
+on: [push]
+jobs:
+  Explore-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 成功觸發事件 ${{ github.event_name }}"
+      - run: echo "🐧 Job running on ${{ runner.os }} server"
+      - run: echo "🐧 Brench ${{ github.ref }}，你的repo是 ${{ github.repository }}"
+      - name: Checkout repository code
+        uses: actions/checkout@v2
+      - run: |
+        ls ${{ github.workspace }}
+      - run: echo: "Job Status: ${{ job.status }}"
