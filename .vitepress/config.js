@@ -1,7 +1,7 @@
 module.exports = {
-  base: '/',
+  base: 'docs/.vitepress/dist',
   title: '22mm 筆記',
-  description: '內化武工',
+  description: '內化武功',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/document.svg' }]
   ],
